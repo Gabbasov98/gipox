@@ -1,0 +1,217 @@
+@import "../vars.scss";
+.sidebar {
+    position: fixed;
+    height: 100vh;
+    width: 87px;
+    left: 0;
+    top: 0;
+    background-color: #3c434a;
+    box-shadow: 0px 0px 29px 3px rgba(0, 0, 0, 0.15);
+    z-index: 50;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 28px 0;
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        height: calc(100% - 12px);
+        width: 58px;
+        left: 44px;
+        bottom: -1px;
+        border: 1px solid $primary;
+        pointer-events: none;
+    }
+    &__search {
+        background-color: #3c434a;
+        padding: 10px 0;
+    }
+    &__img {
+        display: block;
+        background-color: #3c434a;
+        padding: 15px 0;
+        margin-top: 30px;
+        img {
+            opacity: 0.07;
+        }
+    }
+    &__socials {
+        background-color: #3c434a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 105px;
+        padding: 10px 0;
+        &-item {
+            display: block;
+            img {
+                transition: all .225s;
+            }
+            &:not(:last-child) {
+                margin-bottom: 26px;
+            }
+            &:hover {
+                img {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+    &__consult {
+        margin-top: 70px;
+    }
+    &__btn {
+        background-color: #3c434a;
+        width: 53px;
+        height: 255px;
+        position: relative;
+        strong {
+            font-weight: 400;
+        }
+        span {
+            position: absolute;
+            white-space: nowrap;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(-90deg);
+        }
+        @media screen and (min-width: 992px) {
+            &::before {
+                transform: skewX(15deg) rotate(15deg);
+                left: -3px;
+            }
+        }
+    }
+}
+
+@media screen and (max-height: 920px) {
+    .sidebar {
+        &__socials,
+        &__consult {
+            margin-top: 50px;
+        }
+    }
+}
+
+@media screen and (max-height: 840px) {
+    .sidebar {
+        &__img {
+            margin-top: 20px;
+            img {
+                height: 160px;
+                width: auto;
+            }
+        }
+        &__socials,
+        &__consult {
+            margin-top: 20px;
+        }
+        &__socials {
+            &-item {
+                &:not(:last-child) {
+                    margin-bottom: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-height: 670px) {
+    .sidebar {
+        &__img {
+            margin-top: 10px;
+            img {
+                height: 130px;
+            }
+        }
+        &__socials,
+        &__consult {
+            margin-top: 10px;
+        }
+        &__socials {
+            &-item {
+                &:not(:last-child) {
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .sidebar {
+        width: 100%;
+        height: 80px;
+        flex-direction: row;
+        bottom: 0;
+        top: unset;
+        padding: 0 20px;
+        &::before {
+            display: none;
+        }
+        &__img {
+            display: none;
+        }
+        &__socials {
+            flex-direction: row;
+            margin: 0 0 0 45px;
+            &-item {
+                &:not(:last-child) {
+                    margin: 0 25px 0 0;
+                }
+            }
+        }
+        &__btn {
+            width: 255px;
+            height: 53px;
+            span {
+                position: static;
+                transform: unset;
+            }
+        }
+        &__consult {
+            margin: 0 0 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        padding: 0 10px;
+        &__btn {
+            font-size: 13px;
+            width: 180px;
+            height: 45px;
+        }
+        &__socials {
+            margin-left: 20px;
+            &-item {
+                &:not(:last-child) {
+                    margin-right: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .sidebar {
+        justify-content: space-between;
+        &__btn {
+            text-transform: capitalize;
+            width: 110px;
+            strong {
+                display: none;
+            }
+        }
+        &__socials {
+            &-item {
+                &:not(:last-child) {
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}

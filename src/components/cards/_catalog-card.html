@@ -1,0 +1,28 @@
+<a href="" class="catalog-card__top">
+    <img src="img/catalog.webp" alt="">
+</a>
+<div class="catalog-card__bottom">
+    <a href="" class="catalog-card__title">
+        <img src="img/catalog_icon.png" alt="">
+        <div class="catalog-card__title-text">
+            ТРЕНАЖЕР <span>КОМПЛЕКТ №1</span>
+        </div>
+    </a>
+
+    <div class="catalog-card__desc">Спортсмены следят за новинками для спорта и очень важно иметь инновационную портативную технологию для тренировок.</div>
+    <div class="catalog-card__price">5.000 руб.</div>
+
+    <div class="catalog-card__buttons">
+        @@if(card2 !== "true"){
+        <div class='catalog-card__calc cartcalc'>
+            <button class='ccalc-minus btn btn-blue'>-</button>
+            <input type='text' value='1'>
+            <button class='ccalc-plus btn btn-blue'>+</button>
+        </div>
+
+        <button class="catalog-card__btn btn btn-blue-outline">Положить в Корзину</button> } @@if(card2 === "true"){
+
+        <button class="catalog-card__btn btn btn-blue-outline">Подробнее</button> }
+
+    </div>
+</div>

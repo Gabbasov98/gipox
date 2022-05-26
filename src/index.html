@@ -1,0 +1,482 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Главная", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        @@include('components/page-blocks/_header.html')
+        <main class="content">
+            @@include('components/page-blocks/_sidebar.html')
+
+            <section class='main'>
+                <img src="img/arrow.webp" alt="" class="main__arrow">
+                <div class='container'>
+                    <div class='main__top'>
+                        <img src="img/main_logo.webp" alt="" class="main__img">
+                        <div class="main__title">Ваш персональный портативный тренажер для высотных тренировок</div>
+                    </div>
+
+                    <div class="main__bottom">
+                        <div class="main__subtitle display2">
+                            <span>GIPOX</span> ПОДХОДИТ ДЛЯ МНОГИХ ВИДОВ СПОРТА
+                        </div>
+                        <div class="main__item">
+                            <img src="img/sport.png" alt="">
+                            <span>Марафон</span>
+                        </div>
+                        <div class="main__item">
+                            <img src="img/sport2.png" alt="">
+                            <span>Альпинизм</span>
+                        </div>
+                        <div class="main__item">
+                            <img src="img/sport3.png" alt="">
+                            <span>Триатлон</span>
+                        </div>
+                        <div class="main__item">
+                            <img src="img/sport4.png" alt="">
+                            <span>Плавание</span>
+                        </div>
+                        <div class="main__item">
+                            <img src="img/sport5.png" alt="">
+                            <span>Туризм</span>
+                        </div>
+                        <div class="main__item">
+                            <img src="img/sport6.png" alt="">
+                            <span>Беговые лыжи</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='collection'>
+                <img src="img/catalog_img.png" alt="" class="collection__img collection__img1">
+                <img src="img/catalog_img2.png" alt="" class="collection__img collection__img2">
+                <img src="img/catalog_img3.png" alt="" class="collection__img collection__img3">
+                <div class='container'>
+                    <div class="collection__title display2">
+                        <span>КАТАЛОГ</span> ТОВАРОВ
+                    </div>
+                    <div class='collection__items'>
+                        <div class="catalog-card">
+                            @@include('components/cards/_catalog-card.html',{"card2":"false"})
+                        </div>
+                        <div class="catalog-card">
+                            @@include('components/cards/_catalog-card.html',{"card2":"false"})
+                        </div>
+                        <div class="catalog-card">
+                            @@include('components/cards/_catalog-card.html',{"card2":"false"})
+                        </div>
+                        <div class="catalog-card">
+                            @@include('components/cards/_catalog-card.html',{"card2":"false"})
+                        </div>
+                        <div class="catalog-card">
+                            @@include('components/cards/_catalog-card.html',{"card2":"false"})
+                        </div>
+                        <div class="catalog-card">
+                            @@include('components/cards/_catalog-card.html',{"card2":"false"})
+                        </div>
+                        <div class="catalog-card">
+                            @@include('components/cards/_catalog-card.html',{"card2":"false"})
+                        </div>
+                        <div class="catalog-card">
+                            @@include('components/cards/_catalog-card.html',{"card2":"false"})
+                        </div>
+                        <div class="catalog-card">
+                            @@include('components/cards/_catalog-card.html',{"card2":"false"})
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='about'>
+                <img src="img/about_img.webp" alt="" class="about__img">
+                <img src="img/about_img2.webp" alt="" class="about__img2">
+                <div class="about__wrap1">
+                    <div class="about__slider">
+                        <div class='swiper-container'>
+                            <div class='swiper-wrapper'>
+                                <div class='swiper-slide'>
+                                    <img src="img/about_bg.jpg" alt="">
+                                </div>
+                                <div class='swiper-slide'>
+                                    <img src="img/about_bg.jpg" alt="">
+                                </div>
+                                <div class='swiper-slide'>
+                                    <img src="img/about_bg.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about__slider-nav">
+                            <div class='swiper-button-prev'>
+                                <img src="img/arrow_left.png" alt="">
+                            </div>
+                            <div class='swiper-button-next'>
+                                <img src="img/arrow_right.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__info">
+                        <div class="about__info-title display2">
+                            <span>О</span> ТЕХНОЛОГИИ
+                        </div>
+                        <div class="about__info-subtitle">GIPOX - Ваш персональный портативный Тренажер для высотных тренировок.</div>
+                        <div class="about__info-desc">
+                            Бывший спортсмен, который поддерживает спортивную форму. Спортсм ены следят за новинками для спорта и очень важно иметь инновационную портативную технологию для тренировок. Важно информационная поддержка на сайте, новости, отзывы коллег Сайт должен быть
+                            удобным для заказа, покупки, поиска информации.
+                        </div>
+                        <button class="about__info-btn btn btn-blue-outline">Cмотреть видео</button>
+                        <img src="img/man.png" alt="" class="about__info-img">
+                        <img src="img/arrow2.webp" alt="" class="about__arrow">
+                    </div>
+                </div>
+
+                <div class="about__co">
+                    <div class="container">
+                        <div class="about__co-title display2">
+                            « БЫТЬ <span>ПЕРВЫМ</span> НА ВЫСОТЕ »
+                        </div>
+                    </div>
+                    <div class="about__co-wrap">
+                        <img src="img/arrow3.webp" alt="" class="about__co-arrow">
+                        <div class="about__co-wrap-inner">
+                            <img src="img/sky3.png" alt="" class="about__sky">
+                            <img src="img/mountain.png" alt="" class="about__mountain">
+                            <div class="about__co-info">
+                                <div class="about__co-title2 display2">
+                                    <span>О</span> КОМПАНИИ
+                                </div>
+                                <div class="about__co-subtitle">GIPOX - Ваш персональный портативный Тренажер для высотных тренировок.</div>
+                                <div class="about__co-desc">
+                                    Бывший спортсмен, который поддерживает спортивную форму. Спортсм ены следят за новинками для спорта и очень важно иметь инновационную портативную технологию для тренировок. Важно информационная поддержка на сайте, новости, отзывы коллег Сайт должен быть
+                                    удобным для заказа, покупки, поиска информации.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about__gallery">
+                            <div class="container">
+                                <div class="about__gallery-grid">
+                                    <div class="about__gallery-item">
+                                        <img src="img/gallery.jpg" alt="">
+                                    </div>
+                                    <div class="about__gallery-item">
+                                        <img src="img/gallery2.jpg" alt="">
+                                    </div>
+                                    <div class="about__gallery-item">
+                                        <img src="img/gallery3.jpg" alt="">
+                                    </div>
+                                    <div class="about__gallery-item">
+                                        <img src="img/gallery4.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="partners">
+                <div class="container">
+                    <div class="partners__slider">
+                        <div class='swiper-button-prev'>
+                            <img src="img/arrow_left.png" alt="">
+                        </div>
+                        <div class='swiper-container'>
+                            <div class='swiper-wrapper'>
+                                <div class='swiper-slide'>
+                                    <img src="img/partner.webp" alt="">
+                                </div>
+                                <div class='swiper-slide'>
+                                    <img src="img/partner2.webp" alt="">
+                                </div>
+                                <div class='swiper-slide'>
+                                    <img src="img/partner3.webp" alt="">
+                                </div>
+                                <div class='swiper-slide'>
+                                    <img src="img/partner4.webp" alt="">
+                                </div>
+                                <div class='swiper-slide'>
+                                    <img src="img/partner.webp" alt="">
+                                </div>
+                                <div class='swiper-slide'>
+                                    <img src="img/partner2.webp" alt="">
+                                </div>
+                                <div class='swiper-slide'>
+                                    <img src="img/partner3.webp" alt="">
+                                </div>
+                                <div class='swiper-slide'>
+                                    <img src="img/partner4.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class='swiper-button-next'>
+                            <img src="img/arrow_right.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='how-work'>
+                <img src="img/arrow4.png" alt="" class="how-work__arrow">
+                <img src="img/sky4.webp" alt="" class="how-work__sky">
+                <img src="img/sky5.webp" alt="" class="how-work__sky2">
+                <img src="img/how_work_img2.webp" alt="" class="how-work__img">
+                <img src="img/how_work_img3.webp" alt="" class="how-work__img2">
+                <div class='container'>
+                    <div class='how-work__top'>
+                        <div class="how-work__title display2">
+                            <span>КАК</span> РАБОТАЕТ GIPOX
+                        </div>
+                        <div class="how-work__desc">GIPOX - Ваш персональный портативный Тренажер для высотных тренировок.</div>
+                        <div class="how-work__video">
+                            <img src="img/how_work_img.webp" alt="" class="how-work__video-img">
+                            <iframe src="https://www.youtube.com/embed/n9ZEMs8MYHg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="how-work__bottom">
+                        <div class="how-work__bottom-desc">
+                            Бывший спортсмен, который поддерживает спортивную форму. Спортсмены следят за новинками для спорта и очень важно иметь инновационную портативную технологию для тренировок. Важно информационная поддержка на сайте, новости, отзывы коллег Сайт должен быть
+                            удобным для заказа, покупки, поиска информации.
+                        </div>
+
+                        <div class="timetable">
+                            <div class="timetable__title display2">
+                                <span>ТАБЛИЦА</span> ТРЕНИРОВОК
+                            </div>
+                            <div class="timetable__table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Возраст</th>
+                                            <th>Уровень подготовки</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="timetable__table-title">
+                                                    Постепенно таблицу тренировок довести до 30-40 минут.
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="timetable__table-desc">18-25 лет</span>
+                                            </td>
+                                            <td>
+                                                <span class="timetable__table-desc">Начинающий</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="timetable__table-title">
+                                                    Предельное количество воды, заливаемой в тренажер до 20 мл.
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="timetable__table-desc">25-50 лет</span>
+                                            </td>
+                                            <td>
+                                                <span class="timetable__table-desc">Стандартный</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="timetable__table-title">
+                                                    Предельная продолжительность дыхательного акта (ПДА) индивидуальна от 20 до 60 секунд.
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="timetable__table-desc">50 лет и более</span>
+                                            </td>
+                                            <td>
+                                                <span class="timetable__table-desc">Эксперт</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="training">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Занятие</th>
+                                        <th>Увеличение нагрузки</th>
+                                        <th>Время</th>
+                                        <th>Объём воды</th>
+                                        <th>Продолжительность <br> дыхательного акта</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1-е занятие</td>
+                                        <td>-</td>
+                                        <td>5 минут</td>
+                                        <td>15 мл.</td>
+                                        <td>5 секунд</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2-е занятие</td>
+                                        <td>Через 3 дня</td>
+                                        <td>6 минут</td>
+                                        <td>15 мл.</td>
+                                        <td>5 секунд</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3-е занятие</td>
+                                        <td>Через 3 дня</td>
+                                        <td>6 минут</td>
+                                        <td>15 мл.</td>
+                                        <td>6 секунд</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4-е занятие</td>
+                                        <td>Через 3 дня</td>
+                                        <td>6 минут</td>
+                                        <td>16 мл.</td>
+                                        <td>6 секунд</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="advantages">
+                        <div class="advantages__title display2">
+                            ТРЕНИРОВКИ С <span>GIPOX</span> развивают:
+                        </div>
+                        <div class="advantages__wrap">
+                            <div data-num="1" class="advantages__item">
+                                <span>Скорость</span>
+                            </div>
+                            <div data-num="2" class="advantages__item">
+                                <span>Реакцию</span>
+                            </div>
+                            <div data-num="3" class="advantages__item">
+                                <span>Координацию</span>
+                            </div>
+                            <div data-num="4" class="advantages__item">
+                                <span>Ловкость</span>
+                            </div>
+                            <div data-num="5" class="advantages__item">
+                                <span>Выносливость</span>
+                            </div>
+                            <div data-num="6" class="advantages__item">
+                                <span>Точность</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='construction'>
+                <div class='container'>
+                    <div class="construction__title display2">
+                        КОНСТРУКЦИЯ <span>GIPOX</span>
+                    </div>
+                    <div class='construction__inner'>
+                        <div class="construction__img">
+                            <img src="img/construction.webp" alt="">
+                        </div>
+                        <div class="construction__img2">
+                            <img src="img/construction2.webp" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class='news'>
+                <img src="img/news_img.webp" alt="" class="news__img">
+                <img src="img/news_img2.webp" alt="" class="news__img2">
+                <div class='container'>
+                    <div class='news__inner'>
+                        <div class="news__title display2">
+                            НОВОСТИ <span>GIPOX</span>
+                        </div>
+                        <div class="news__items">
+                            <div class="news-card">
+                                @@include('components/cards/_news-card.html',{"img":"news"})
+                            </div>
+                            <div class="news-card">
+                                @@include('components/cards/_news-card.html',{"img":"news2"})
+                            </div>
+                            <div class="news-card">
+                                @@include('components/cards/_news-card.html',{"img":"news3"})
+                            </div>
+                            <div class="news-card">
+                                @@include('components/cards/_news-card.html',{"img":"news4"})
+                            </div>
+                            <div class="news-card">
+                                @@include('components/cards/_news-card.html',{"img":"news5"})
+                            </div>
+                            <div class="news-card">
+                                @@include('components/cards/_news-card.html',{"img":"news"})
+                            </div>
+                        </div>
+
+                        <a href="" class="news__btn btn btn-blue-outline">Читать все новости</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class='qa'>
+                <img src="img/qa_img.webp" alt="" class="qa__img qa__img1">
+                <img src="img/qa_img2.webp" alt="" class="qa__img qa__img2">
+                <img src="img/qa_img3.webp" alt="" class="qa__img qa__img3">
+                <div class='container'>
+                    <div class='qa__title display2'>
+                        ЧАСТО ЗАДАВАЕМЫЕ <span>ВОПРОСЫ</span>
+                    </div>
+                    <div class="qa__items">
+                        <div class="qa__item">
+                            @@include('components/cards/_qa-card.html',{"title":"Сколько стоит тренажер для дыхания?"})
+                        </div>
+                        <div class="qa__item">
+                            @@include('components/cards/_qa-card.html',{"title":"С какого возраста можно пользоваться тренажером ?"})
+                        </div>
+                        <div class="qa__item">
+                            @@include('components/cards/_qa-card.html',{"title":"Для каких видов спорта подходит тренажер ?"})
+                        </div>
+                        <div class="qa__item">
+                            @@include('components/cards/_qa-card.html',{"title":"Какой уровень подготовки нужен, чтобы пользоваться тренажером ?"})
+                        </div>
+                        <div class="qa__item">
+                            @@include('components/cards/_qa-card.html',{"title":"Зачем нужен тренажер для дыхания ?"})
+                        </div>
+                        <div class="qa__item">
+                            @@include('components/cards/_qa-card.html',{"title":"Из чего состоит тренажер для дыхания?"})
+                        </div>
+                    </div>
+
+                    <button class="qa__btn btn btn-blue-outline">Задать свой вопрос</button>
+
+                    <form action="" class="qa__form">
+                        <div class="qa__form-grid">
+                            <fieldset class='qa__form-group form-group'>
+                                <label>Ваше имя</label>
+                                <input type='text' placeholder="Имя" />
+                            </fieldset>
+                            <fieldset class='qa__form-group form-group'>
+                                <label>Ваша почта</label>
+                                <input type='text' placeholder="_________@________" />
+                            </fieldset>
+                            <fieldset class='qa__form-group qa__form-group--text form-group'>
+                                <label>Ваш вопрос</label>
+                                <textarea placeholder="Ваш вопрос"></textarea>
+                            </fieldset>
+                        </div>
+                        <button class="qa__form-btn btn btn-blue-outline">Отправить</button>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+        @@include('components/page-blocks/_footer.html')
+    </div>
+    @@include('components/page-blocks/_popup.html') @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

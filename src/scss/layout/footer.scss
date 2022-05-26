@@ -1,0 +1,132 @@
+@import "../vars";
+.footer {
+    padding: 45px 0 17px;
+    background-color: #222931;
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    font-family: $font1;
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo {
+        display: block;
+        width: 253px;
+        flex-shrink: 0;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+    &__phone,
+    &__time,
+    &__address,
+    &__email {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 500;
+        color: #fff;
+        &-icon {
+            width: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+    }
+    &__time,
+    &__email {
+        margin-top: 10px;
+    }
+    &__by {
+        display: flex;
+        align-items: center;
+        font-weight: 300;
+        &-icon {
+            width: 41px;
+            flex-shrink: 0;
+            margin-right: 14px;
+            img {
+                width: 100%;
+                display: block;
+            }
+        }
+        &-content {
+            font-size: 14px;
+            line-height: 1.2;
+        }
+        a {
+            display: block;
+            color: $primary;
+            line-height: inherit;
+            text-decoration: underline !important;
+            &:hover {
+                text-decoration: none !important;
+            }
+        }
+    }
+    &__conf {
+        display: block;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 500;
+        text-decoration: underline !important;
+        color: #868686;
+        margin-top: 25px;
+    }
+}
+
+.footer-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    &__link {
+        font-size: 14px;
+        font-weight: 500;
+        color: #808080;
+        &:hover {
+            text-decoration: underline !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .footer {
+        &__logo {
+            width: 200px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer {
+        &__top {
+            flex-direction: column;
+        }
+        &__info {
+            margin-top: 40px;
+        }
+        &__contacts,
+        &__by {
+            margin-top: 20px;
+        }
+        &__phone,
+        &__time,
+        &__address,
+        &__email {
+            justify-content: center;
+        }
+    }
+    .footer-nav {
+        flex-direction: column;
+        margin-top: 0px;
+        &__link {
+            margin-top: 15px;
+        }
+    }
+}

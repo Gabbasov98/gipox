@@ -1,0 +1,679 @@
+@import "vars";
+.catalog-item {
+    background-image: url(../img/catalog_item_bg.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    padding-bottom: 44px;
+    position: relative;
+    &__img {
+        position: absolute;
+        pointer-events: none;
+    }
+    &__img1 {
+        top: 27px;
+        right: 0;
+    }
+    &__img2 {
+        bottom: -20px;
+        left: 0;
+    }
+    &__img3 {
+        bottom: 61px;
+        right: 0;
+    }
+    &__title {
+        color: #fff;
+        margin-top: 7px;
+    }
+    &__inner {
+        position: relative;
+        z-index: 2;
+        background-color: #ffffff;
+        box-shadow: 0px 6px 4px 1px rgba(0, 0, 0, 0.18);
+        margin-top: 22px;
+        padding: 35px 50px 35px 35px;
+        display: flex;
+    }
+    &__left {
+        width: 564px;
+        flex-shrink: 0;
+    }
+    &__right {
+        margin-left: 50px;
+        flex-grow: 1;
+    }
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: -25px;
+    }
+    &__price {
+        font-size: 36.6px;
+        font-weight: 700;
+        color: $primary;
+    }
+    &__icons {
+        display: flex;
+        align-items: center;
+    }
+    &__icon {
+        margin-left: 23px;
+    }
+    &__top2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__buttons {
+        flex-shrink: 0;
+        margin-top: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__calc {
+        flex-shrink: 0;
+    }
+    &__btn {
+        background-color: $primary;
+        height: 53px;
+        width: 226px;
+        margin-left: 24px;
+        &::before {
+            opacity: 1;
+        }
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    &__delivery {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 16px;
+        img {
+            margin-right: 7px;
+            flex-shrink: 0;
+        }
+    }
+    &__desc,
+    &__list {
+        margin-top: 25px;
+        padding-top: 25px;
+        border-top: 2px solid $primary;
+        p {
+            font-size: 18px;
+            line-height: 1.2;
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        }
+    }
+    &__list {
+        li {
+            font-size: 18px;
+            position: relative;
+            padding-left: 23px;
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                z-index: 1;
+                width: 11px;
+                height: 11px;
+                border-radius: 50%;
+                background-color: #5fd9ef;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    &__bottom {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #fff;
+        margin-top: 70px;
+        padding-left: 40px;
+    }
+    &__sports {
+        width: 570px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 27px;
+        &-title {
+            max-width: 610px;
+            text-align: right;
+        }
+    }
+}
+
+.gallery {
+    .swiper {
+        &-wrapper {
+            align-items: stretch;
+        }
+        &-slide {
+            height: auto;
+            img {
+                width: 100%;
+                height: 100%;
+                display: block;
+                object-fit: cover;
+            }
+        }
+        &-button {
+            &-prev,
+            &-next {
+                position: relative;
+                margin-top: 0;
+                left: unset;
+                right: unset;
+                top: unset;
+                bottom: unset;
+            }
+            &-prev {
+                margin-right: 10px;
+            }
+        }
+    }
+    &__big {
+        position: relative;
+    }
+    &__small {
+        margin-top: 16px;
+    }
+    &__nav {
+        position: absolute;
+        right: 10px;
+        bottom: 9px;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.about2 {
+    background-image: url(../img/about_bg2.webp);
+    background-size: cover;
+    padding: 45px 0 50px;
+    &__inner {
+        display: flex;
+    }
+    &__video {
+        width: 770px;
+        flex-shrink: 0;
+        margin-right: 30px;
+        position: relative;
+        iframe {
+            width: 100%;
+            height: 405px;
+        }
+    }
+    &__img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translate(-50%, 50%);
+    }
+    &__title {
+        max-width: 280px;
+    }
+    &__info {
+        &-subtitle {
+            margin: 45px 0;
+            font-size: 22px;
+            line-height: 1.2;
+        }
+        &-desc {
+            font-size: 18px;
+            line-height: 1.2;
+            p {
+                margin-top: 20px;
+                line-height: inherit;
+            }
+        }
+    }
+}
+
+.feeadback {
+    margin-top: 120px;
+    position: relative;
+    &__arrow {
+        position: absolute;
+        left: 0;
+        top: -55px;
+    }
+    &__title {
+        text-align: center;
+        position: relative;
+        z-index: 2;
+    }
+    &__slider {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 70px;
+    }
+    .swiper {
+        &-slide {
+            opacity: 0;
+            pointer-events: none;
+            &-active {
+                opacity: 1;
+                pointer-events: unset;
+            }
+            @media screen and (min-width: 1280px) {
+                &-next+.swiper-slide {
+                    opacity: 1;
+                    pointer-events: unset;
+                }
+            }
+            @media screen and (min-width: 900px) {
+                &-next {
+                    opacity: 1;
+                    pointer-events: unset;
+                }
+            }
+        }
+        &-container {
+            width: calc(100% - 140px);
+        }
+        &-button {
+            &-prev,
+            &-next {
+                position: relative;
+                left: unset;
+                top: unset;
+                right: unset;
+                bottom: unset;
+            }
+        }
+    }
+}
+
+.collection2 {
+    padding: 40px 0 65px;
+    background-image: url(../img/collection_bg.webp);
+    background-size: 100% auto;
+    background-position: left bottom;
+    position: relative;
+    &__img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        pointer-events: none;
+    }
+    &__img2 {
+        position: absolute;
+        right: 0;
+        top: -30px;
+        pointer-events: none;
+    }
+    &__top {
+        position: relative;
+    }
+    &__title {
+        text-align: center;
+        color: #fff;
+        position: relative;
+        z-index: 3;
+    }
+    &__slider {
+        margin-top: 52px;
+        position: relative;
+        z-index: 3;
+    }
+    &__nav {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        z-index: 3;
+    }
+    .swiper {
+        &-slide {
+            opacity: 0;
+            pointer-events: none;
+            &-active {
+                opacity: 1;
+                pointer-events: unset;
+            }
+            @media screen and (min-width: 1380px) {
+                &-next+.swiper-slide+.swiper-slide {
+                    opacity: 1;
+                    pointer-events: unset;
+                }
+            }
+            @media screen and (min-width: 1150px) {
+                &-next+.swiper-slide {
+                    opacity: 1;
+                    pointer-events: unset;
+                }
+            }
+            @media screen and (min-width: 700px) {
+                &-next {
+                    opacity: 1;
+                    pointer-events: unset;
+                }
+            }
+        }
+        &-button {
+            &-prev,
+            &-next {
+                position: relative;
+                margin-top: 0;
+                left: unset;
+                right: unset;
+                top: unset;
+                bottom: unset;
+            }
+            &-prev {
+                margin-right: 19px;
+            }
+        }
+    }
+    .catalog-card {
+        &__top {
+            height: 268px;
+        }
+        &__bottom {
+            padding-top: 230px;
+        }
+        &__title {
+            &-text {
+                font-size: 16px;
+            }
+            img {
+                width: 42px;
+            }
+        }
+        &__desc {
+            font-size: 16px;
+            margin-top: 18px;
+        }
+        &__price {
+            margin-top: 15px;
+        }
+        &__buttons {
+            margin-top: 16px;
+        }
+        &__btn {
+            margin-left: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1850px) {
+    .feeadback {
+        &__arrow {
+            left: -300px;
+        }
+    }
+}
+
+@media screen and (max-width: 1480px) {
+    .catalog-item {
+        &__img {
+            display: none;
+        }
+    }
+    .about2 {
+        &__video {
+            width: 550px;
+            iframe {
+                height: 350px;
+            }
+        }
+        &__info {
+            &-subtitle {
+                margin: 25px 0;
+            }
+            &-desc {
+                p {
+                    margin-top: 10px;
+                    line-height: inherit;
+                }
+            }
+        }
+    }
+    .collection2 {
+        &__img2 {
+            right: -300px;
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .catalog-item {
+        &__left {
+            width: 450px;
+        }
+        &__right {
+            margin-left: 25px;
+        }
+        &__bottom {
+            flex-wrap: wrap;
+        }
+        &__sports {
+            margin-top: 70px;
+            &-title {
+                width: 100%;
+                max-width: 100%;
+                order: -1;
+                text-align: left;
+            }
+        }
+    }
+    .feeadback {
+        &__arrow {
+            left: -450px;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .catalog-item {
+        &__inner {
+            display: block;
+            padding: 25px;
+        }
+        &__left {
+            width: 100%;
+        }
+        &__right {
+            margin: 30px 0 0;
+        }
+    }
+    .about2 {
+        &__video {
+            width: 400px;
+            iframe {
+                height: 250px;
+            }
+        }
+        &__img {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .about2 {
+        &__inner {
+            display: block;
+        }
+        &__video {
+            width: 100%;
+            margin: 0 0 30px;
+            iframe {
+                height: 500px;
+            }
+        }
+    }
+    .feeadback {
+        margin-top: 40px;
+        &__arrow {
+            display: none;
+        }
+        &__slider {
+            margin-top: 30px;
+        }
+    }
+    .collection2 {
+        padding: 30px 0;
+        &__img2 {
+            display: none;
+        }
+        &__slider {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .catalog-item {
+        &__bottom {
+            padding: 0;
+            margin-top: 40px;
+        }
+    }
+    .about2 {
+        &__title {
+            max-width: 100%;
+        }
+        &__video {
+            iframe {
+                height: 350px;
+            }
+        }
+    }
+    .feeadback {
+        .swiper {
+            &-container {
+                width: 100%;
+            }
+            &-button {
+                &-prev,
+                &-next {
+                    display: none;
+                }
+            }
+        }
+    }
+    .collection2 {
+        &__img {
+            height: 110%;
+        }
+        &__nav {
+            position: static;
+            margin-top: 30px;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .catalog-item {
+        padding-bottom: 30px;
+        &__inner {
+            width: calc(100% + 20px);
+            margin-left: -10px;
+            padding: 10px;
+        }
+        &__top {
+            flex-wrap: wrap;
+        }
+        &__price,
+        &__icons,
+        &__calc {
+            margin-top: 15px;
+        }
+        &__icon {
+            &:first-child {
+                margin-left: 0;
+            }
+            img {
+                height: 60px;
+                width: auto;
+            }
+        }
+        &__buttons {
+            display: block;
+            width: 100%;
+            margin-top: 0;
+        }
+        &__btn {
+            margin: 15px 0 0;
+            width: 100%;
+        }
+        &__list,
+        &__desc {
+            margin-top: 20px;
+            padding-top: 20px;
+            p,
+            li {
+                font-size: 16px;
+                br {
+                    display: none;
+                }
+            }
+        }
+        &__desc {
+            li {
+                padding-left: 12px;
+                &::before {
+                    width: 6px;
+                    height: 6px;
+                }
+            }
+        }
+        &__sports {
+            display: block;
+            padding-left: 45px;
+            margin-top: 30px;
+        }
+        .main__item {
+            margin-top: 70px;
+        }
+    }
+    .gallery {
+        &__small {
+            display: none;
+        }
+    }
+    .about2 {
+        padding: 30px 0;
+        &__info {
+            &-subtitle {
+                font-size: 16px;
+                margin: 10px 0;
+            }
+            &-desc {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .about2 {
+        &__video {
+            iframe {
+                height: 250px;
+            }
+        }
+    }
+}

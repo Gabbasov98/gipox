@@ -1,0 +1,68 @@
+@import "../vars";
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-out .225s;
+    padding: 0;
+    font-weight: 500;
+    font-size: 16px;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.btn-blue-outline {
+    color: #ffffff;
+    border: 2px solid $primary;
+    position: relative;
+    &:hover {
+        border-color: transparent;
+        background-color: $primary;
+        color: #fff;
+        &::before {
+            opacity: 1;
+        }
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        width: calc(100% + 10px);
+        height: calc(100% + 2px);
+        transform: skewX(-15deg);
+        border: 1px solid $primary;
+        left: -8px;
+        top: 5px;
+        border-radius: 5px;
+        opacity: 0;
+        transition: all .225s;
+    }
+}
+
+.btn-blue {
+    background-color: $primary;
+    color: #fff;
+    &:hover {
+        color: #fff;
+        background-color: darken($primary, 10%);
+    }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: 53px;
+    height: 48px;
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(0.0deg, #5fd9ef 0%, #00aeef 100%);
+        border-radius: 10px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) skew(-10deg);
+    }
+}

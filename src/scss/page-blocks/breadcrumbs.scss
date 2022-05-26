@@ -1,0 +1,27 @@
+@import "../vars.scss";
+.breadcrumbs {
+    margin-top: 14px;
+    &__item {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 110%;
+        position: relative;
+        font-weight: 500;
+        display: inline;
+        color: #fff;
+        &:not(:first-child) {
+            margin-left: 21px;
+            &:before {
+                content: '';
+                position: absolute;
+                z-index: 1;
+                width: 11px;
+                height: 2px;
+                background-color: #ffffff;
+                top: 7px;
+                right: 100%;
+                margin-right: 5px;
+            }
+        }
+    }
+}

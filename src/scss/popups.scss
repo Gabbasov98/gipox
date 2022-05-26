@@ -1,0 +1,121 @@
+@import 'vars';
+@import 'mixins';
+.popup-backdrop {
+    opacity: 0.45;
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.popup {
+    position: fixed;
+    z-index: 1000;
+    width: 919px;
+    bottom: 100px;
+    left: 87px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .225s;
+    &--active {
+        opacity: 1;
+        pointer-events: unset;
+    }
+    &__wrap {
+        background-image: linear-gradient(180.0deg, #4c5a6a 0%, #222b34 100%);
+        background-color: #3c434a;
+        clip-path: polygon( 0% 0%, 100% 0%, calc(100% - 65px) 100%, 0% 100%);
+        width: 100%;
+        padding: 20px 95px;
+    }
+    &__close {
+        position: absolute;
+        bottom: 4px;
+        right: 31px;
+    }
+    &__arrow {
+        position: absolute;
+        top: 12px;
+        right: -27px;
+        z-index: 2;
+    }
+    &__title {
+        color: #fff;
+    }
+    &__inner {
+        width: 100%;
+        max-width: 540px;
+        margin-left: auto;
+    }
+    &__form {
+        margin-top: 37px;
+        &-group {
+            margin-bottom: 11px;
+            input {
+                clip-path: polygon( 0% 0%, 100% 0%, calc(100% - 15px) 100%, 0% 100%);
+                background-color: #919191;
+                &:focus {
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+    &__btn {
+        margin-top: 17px;
+        max-width: 100%;
+        width: 255px;
+        height: 53px;
+        font-size: 16px;
+        font-weight: 500;
+        background-color: $primary;
+        &::before {
+            opacity: 1;
+        }
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .popup {
+        width: 750px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .popup {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: calc(100% - 20px);
+        &__inner {
+            max-width: 100%;
+        }
+        &__wrap {
+            clip-path: unset;
+        }
+        &__arrow {
+            display: none;
+        }
+        &__close {
+            top: 20px;
+            right: 20px;
+            bottom: unset;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .popup {
+        &__wrap {
+            padding: 40px 20px;
+        }
+        &__form {
+            margin-top: 20px;
+        }
+    }
+}
