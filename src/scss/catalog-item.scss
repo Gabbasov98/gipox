@@ -497,6 +497,10 @@
             margin: 30px 0 0;
         }
     }
+    .gallery {
+        max-width: 500px;
+        margin: 0 auto;
+    }
     .about2 {
         &__video {
             width: 400px;
@@ -541,6 +545,9 @@
             margin-top: 20px;
         }
     }
+    .gallery {
+        max-width: 400px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -561,14 +568,20 @@
         }
     }
     .feeadback {
+        &__slider {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
         .swiper {
             &-container {
                 width: 100%;
+                height: unset;
+                order: 2;
+                margin-top: 20px;
             }
             &-button {
-                &-prev,
-                &-next {
-                    display: none;
+                &-prev {
+                    margin-right: 19px;
                 }
             }
         }
